@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <title>Gestión de Ingresos y Egresos</title>
+    <link rel=stylesheet href=styles.css>
+</head>
+<body>
+    <div class=container>
+        <h1>Gestión de Ingresos y Egresos</h1>
+        <form id=financeForm>
+            <h2>Ingresos</h2>
+            <label for=cajaInicial>Caja Inicial (obligatorio):</label>
+            <input type=text id=cajaInicial required step=0.01>
+
+            <label for=efectivoRecibido1>Efectivo Recibido 1:</label>
+            <input type=text id=efectivoRecibido1 step=0.01>
+
+            <label for=efectivoRecibido2>Efectivo Recibido 2:</label>
+            <input type=text id=efectivoRecibido2 step=0.01>
+
+            <label for=efectivoRecibido3>Efectivo Recibido 3:</label>
+            <input type=text id=efectivoRecibido3 step=0.01>
+
+            <label for=full>Full:</label>
+            <input type=text id=full step=0.01>
+
+            <label for=bPichinchaIngreso>B Pichincha (si aplica):</label>
+            <input type=text id=bPichinchaIngreso step=0.01>
+
+            <label for=bGuayaquilAIngreso>B Guayaquil A (si aplica):</label>
+            <input type=text id=bGuayaquilAIngreso step=0.01>
+
+            <label for=bGuayaquilRIngreso>B Guayaquil R (si aplica):</label>
+            <input type=text id=bGuayaquilRIngreso step=0.01>
+
+            <h2>Egresos</h2>
+            <label for=bPichinchaEgreso>B Pichincha (si aplica):</label>
+            <input type=text id=bPichinchaEgreso step=0.01>
+
+            <label for=bGuayaquilAEgreso>B Guayaquil A (si aplica):</label>
+            <input type=text id=bGuayaquilAEgreso step=0.01>
+
+            <label for=bGuayaquilREgreso>B Guayaquil R (si aplica):</label>
+            <input type=text id=bGuayaquilREgreso step=0.01>
+
+            <label for=entregas>Entregas (obligatorio):</label>
+            <input type=text id=entregas required step=0.01>
+
+            <h2>Comisión del Full (obligatorio)</h2>
+            <label for=comisionFull>Comisión:</label>
+            <input type=text id=comisionFull required step=0.01>
+
+            <h2>Cantidad de Billetes y Monedas</h2>
+            <label for=billetes5>Billetes de 5 dólares:</label>
+            <input type=text id=billetes5 step=0.01>
+
+            <label for=monedas1>Monedas de 1 dólar:</label>
+            <input type=text id=monedas1 step=0.01>
+
+            <label for=monedas50>Monedas de 50 centavos:</label>
+            <input type=text id=monedas50 step=0.01>
+
+            <label for=monedas25>Monedas de 25 centavos:</label>
+            <input type=text id=monedas25 step=0.01>
+
+            <label for=monedas10>Monedas de 10 centavos:</label>
+            <input type=text id=monedas10 step=0.01>
+
+            <label for=monedas5>Monedas de 5 centavos:</label>
+            <input type=text id=monedas5 step=0.01>
+
+            <label for=monedas1Centavo>Monedas de 1 centavo:</label>
+            <input type=text id=monedas1Centavo step=0.01>
+
+            <button type=submit>Calcular</button>
+
+        </form>
+
+        <div class=result>
+          <!-- Resultados se mostrarán aquí -->
+          <h2>Resultados</h2>
+          <p id='resultado'></p>
+        </div>
+
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
